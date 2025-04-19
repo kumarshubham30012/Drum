@@ -4,14 +4,14 @@ for(let i =0;i<noOfDrumbButton;i++){
         // alert("Wow")
     });
 }
-// Get all buttons with class "play-sound"
+
 var buttons = document.getElementsByClassName('drum');
 
-// Loop through each button
+
 for (var i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener('click', function () {
-        var soundFile = this.getAttribute('data-sound'); // get sound path
-        var sound = new Audio(soundFile); // create new audio
-        sound.play(); // play the audio
+        var soundFile = this.getAttribute('data-sound'); 
+        var sound = new Audio(soundFile);
+        sound.play();
     });
 }
